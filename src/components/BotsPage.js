@@ -8,7 +8,7 @@ function BotsPage() {
   const [botArmy, setBotArmy] = useState([]);
   
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://marylucy123450.github.io/botdb/db.json")
     .then (res => res.json())
     .then (bots => setBots(bots))
   }, []);
